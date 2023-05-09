@@ -1,0 +1,13 @@
+.WholePage {
+    display: flex;
+    height: 100vh;
+    width:100vh;
+}
+
+.left-side {
+    flex:1 2 0;
+}
+
+.right-side {
+    flex:2 1 0;
+}
