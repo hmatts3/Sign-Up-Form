@@ -12,7 +12,6 @@
 }
 
 .left-side {
-    min-width: 400px;
     flex: 1;
     display: flex;
     align-items: center;
@@ -26,41 +25,39 @@
 .logocontainer {
     flex: 1;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     color: white;
     font-size: 90px;
     max-height: 40%;
     align-items: center;
     justify-content: center;
-    background-color: rgb(0,0,0, .3)
+    background-color: rgb(0,0,0, .3);
+    object-fit: contain;
     
 }
 
 .logo {
     display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    margin-right: -2px;
+    flex: 1 0;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .logo img {
-    flex: 1;
+    flex: 1 0;
     max-width: 100px;
     max-width: 100px;
     object-fit: contain;
     min-width: none;
     min-height: none;
     padding-top: 10px;
-    padding-left: 5px;
-    margin-right: -2px;
 }
 
 .logotext {
-    flex: 1;
+    flex: 2 0;
     display: inline-block;
-    padding: 0 10px;
-    text-align: center;
+    padding: 0 25px 0 0;
+    text-align: left;
     display: inline;
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
@@ -80,15 +77,29 @@
     flex: 1;
     font-size: larger;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    box-sizing: border-box;
+    padding: 50px 50px 75px 50px;
 }
 
 .right-middle {
     flex: 1;
     background-color:whitesmoke;
+    padding: 50px;
 }
 
 .right-bottom {
     flex: 1;
+    padding: 50px;
 }
+
+
+.asap-text {
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
