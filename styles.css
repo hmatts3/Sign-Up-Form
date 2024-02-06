@@ -7,7 +7,7 @@
 
 #WholePage {
     display: flex;
-    padding: 0 20vh 0 20vh;
+    padding: 0 40vh 0 40vh;
     flex: 1;
 }
 
@@ -86,12 +86,44 @@
 .right-middle {
     flex: 1;
     background-color:whitesmoke;
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .right-bottom {
     flex: 1;
     padding: 50px;
+}
+
+.form-title {
+    flex: 1;
+    padding: 20px 0 20px 40px;
+    font-size: x-large;
+}
+
+.form-content {
+    flex: 1;
+    display: flex;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.right-column {
+    flex: 2;
+    padding-left: 60px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+input {
+    margin-bottom: 15px;
+    margin-top: 1px;
+
 }
 
 
@@ -103,3 +135,4 @@
     font-variation-settings:
       "wdth" 100;
   }
+
