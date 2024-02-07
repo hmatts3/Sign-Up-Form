@@ -1,3 +1,14 @@
+
+input:focus {
+    border: 2px solid lightblue;
+    outline: none;
+    box-shadow: 3px 3px 3px rgb(0,0,0, .3);
+}
+
+a:link, a, a:visited{
+    color: white;
+}
+
 #FullPage {
     background-color: black;
     height: 100vh;
@@ -14,12 +25,14 @@
 .left-side {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-image: url(efe-kurnaz-RnCPiXixooY-unsplash.jpg);
     background-size: cover;
-    font-family: "Finger Paint";
-    font-weight: 400;
-    font-style: normal;
+}
+
+.topfiller {
+    flex: 5;
 }
 
 .logocontainer {
@@ -33,6 +46,7 @@
     justify-content: center;
     background-color: rgb(0,0,0, .3);
     object-fit: contain;
+    min-width: 100%;
     
 }
 
@@ -80,7 +94,7 @@
     align-items: flex-end;
     justify-content: center;
     box-sizing: border-box;
-    padding: 50px 50px 75px 50px;
+    padding: 0px 50px 50px 40px;
 }
 
 .right-middle {
@@ -88,22 +102,26 @@
     background-color:whitesmoke;
     display: flex;
     flex-direction: column;
+    box-shadow: 3px 2px 3px 3px rgb(0,0,0, .2);
 }
 
 .right-bottom {
     flex: 1;
-    padding: 50px;
+    padding: 30px 0 0 40px;
 }
 
 .form-title {
     flex: 1;
-    padding: 20px 0 20px 40px;
+    padding: 30px 0 0px 40px;
     font-size: x-large;
+    margin: auto 0 auto 0;
+
 }
 
 .form-content {
     flex: 1;
     display: flex;
+    padding: 0 0 20px 0;
 }
 
 .left-column {
@@ -136,3 +154,24 @@ input {
       "wdth" 100;
   }
 
+
+button {
+    border-radius: 8px;
+    background-color: palevioletred;
+    color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: 550;
+    border-color: white;
+    border-width: 2px;
+
+}
+
+
+.photocredit {
+    flex: 5;
+    display: flex;
+    color: white;
+    align-items: end;
+
+}
