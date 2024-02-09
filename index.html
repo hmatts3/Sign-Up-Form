@@ -76,12 +76,14 @@
                                 <li>
                                     <label for="phone_number">Phone Number:</label>
                                     <br>
-                                    <input type="tel" tabindex="4" id="phone_number" required>
+                                    <input minlength=5 type="tel" tabindex="4" id="phone_number" required>
+                                    <span class="error"></span>
                                 </li>
                                 <li>
                                     <label for="confirm_password">Confirm Password:</label>
                                     <br>
-                                    <input type="password" tabindex="6" id="confirm_password" required>
+                                    <input minlength=5 type="password" tabindex="6" id="confirm_password" required>
+                                    <span class="error"></span>
                                 </li>
                             </ul>
                         </div>
